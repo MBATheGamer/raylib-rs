@@ -6,4 +6,5 @@ unsafe extern "C" {
 
   // Drawing-related functions
   pub unsafe fn BeginDrawing();
+  pub unsafe fn EndDrawing();
 }

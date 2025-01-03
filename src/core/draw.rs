@@ -1,4 +1,13 @@
-use super::ffi::{BeginDrawing, EndDrawing};
+use crate::structs::Color;
+
+use super::ffi::{BeginDrawing, ClearBackground, EndDrawing};
+
+#[inline]
+pub fn clear_background(color: Color) {
+  unsafe {
+    ClearBackground(color);
+  }
+}
 
 #[inline]
 pub fn begin_drawing() {

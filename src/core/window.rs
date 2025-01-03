@@ -1,6 +1,6 @@
 use std::ffi::CString;
 
-use super::ffi::{CloseWindow, InitWindow};
+use super::ffi::{CloseWindow, InitWindow, WindowShouldClose};
 
 #[inline]
 pub fn init_window(screen_width: i32, screen_height: i32, title: &str) {
@@ -16,4 +16,9 @@ pub fn close_window() {
   unsafe {
     CloseWindow();
   }
+}
+
+#[inline]
+pub fn window_should_close() -> bool {
+  unsafe { return WindowShouldClose() }
 }

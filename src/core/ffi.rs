@@ -10,4 +10,7 @@ unsafe extern "C" {
   pub unsafe fn ClearBackground(color: Color);
   pub unsafe fn BeginDrawing();
   pub unsafe fn EndDrawing();
+
+  // Timing-related functions
+  pub unsafe fn SetTargetFPS(fps: i32);
 }

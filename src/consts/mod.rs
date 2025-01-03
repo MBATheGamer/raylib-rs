@@ -1,3 +1,3 @@
 mod colors;
 
-pub use colors::RAYWHITE;
+pub use colors::*;

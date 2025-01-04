@@ -14,6 +14,13 @@ pub const GRAY: Color = Color {
   alpha: 255,
 };
 
+pub const MAROON: Color = Color {
+  red: 190,
+  green: 33,
+  blue: 55,
+  alpha: 255,
+};
+
 pub const RAYWHITE: Color = Color {
   red: 245,
   green: 245,

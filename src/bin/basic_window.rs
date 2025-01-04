@@ -1,5 +1,5 @@
 use raylib_rs::{
-  consts::{LIGHTGRAY, RAYWHITE},
+  consts::colors::{LIGHTGRAY, RAYWHITE},
   core::{
     begin_drawing, clear_background, close_window, end_drawing, init_window, set_target_fps,
     window_should_close,

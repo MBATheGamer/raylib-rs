@@ -1,6 +1,6 @@
 mod draw;
 mod ffi;
-mod gesture;
+mod gestures;
 mod input;
 mod time;
 mod window;

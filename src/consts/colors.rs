@@ -7,6 +7,13 @@ pub const LIGHTGRAY: Color = Color {
   alpha: 200,
 };
 
+pub const GRAY: Color = Color {
+  red: 130,
+  green: 130,
+  blue: 130,
+  alpha: 255,
+};
+
 pub const RAYWHITE: Color = Color {
   red: 245,
   green: 245,

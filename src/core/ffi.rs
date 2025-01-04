@@ -13,4 +13,7 @@ unsafe extern "C" {
 
   // Timing-related functions
   pub unsafe fn SetTargetFPS(fps: i32);
+
+  // Input-related functions: keyboard
+  pub unsafe fn IsKeyPressed(key: i32) -> bool;
 }

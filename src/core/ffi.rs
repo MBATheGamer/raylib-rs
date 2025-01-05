@@ -14,9 +14,12 @@ unsafe extern "C" {
   // Timing-related functions
   pub unsafe fn SetTargetFPS(fps: i32);
 
+  // Random values generation functions
+  pub unsafe fn GetRandomValue(min: i32, max: i32) -> i32;
+
   // Input-related functions: keyboard
   pub unsafe fn IsKeyPressed(key: i32) -> bool;
 
-  // Gestures and Touch Handling Functions
+  // Gestures and Touch handling functions
   pub unsafe fn IsGestureDetected(gesture: u32) -> bool;
 }

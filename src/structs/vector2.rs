@@ -1,3 +1,4 @@
+#[repr(C)]
 #[derive(Default)]
 pub struct Vector2 {
   pub x: f32,

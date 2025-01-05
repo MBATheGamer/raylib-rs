@@ -1,5 +1,6 @@
 use super::vector2::Vector2;
 
+#[repr(C)]
 #[derive(Default)]
 pub struct Camera2D {
   pub offset: Vector2,

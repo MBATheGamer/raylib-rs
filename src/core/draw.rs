@@ -1,6 +1,6 @@
-use crate::structs::Color;
+use crate::structs::{Camera2D, Color};
 
-use super::ffi::{BeginDrawing, ClearBackground, EndDrawing};
+use super::ffi::{BeginDrawing, BeginMode2D, ClearBackground, EndDrawing};
 
 #[inline]
 pub fn clear_background(color: Color) {
@@ -20,5 +20,12 @@ pub fn begin_drawing() {
 pub fn end_drawing() {
   unsafe {
     EndDrawing();
+  }
+}
+
+#[inline]
+pub fn begin_mode_2d(camera: Camera2D) {
+  unsafe {
+    BeginMode2D(camera);
   }
 }

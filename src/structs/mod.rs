@@ -1,3 +1,4 @@
+mod camera_2d;
 mod color;
 mod rectangle;
 

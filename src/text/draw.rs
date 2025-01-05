@@ -4,6 +4,7 @@ use crate::structs::Color;
 
 use super::ffi::DrawText;
 
+#[inline]
 pub fn draw_text(text: &str, pos_x: i32, pos_y: i32, font_size: i32, color: Color) {
   let text = CString::new(text).unwrap();
 

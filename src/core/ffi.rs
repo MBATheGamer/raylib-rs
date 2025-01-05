@@ -19,6 +19,7 @@ unsafe extern "C" {
 
   // Input-related functions: keyboard
   pub unsafe fn IsKeyPressed(key: i32) -> bool;
+  pub unsafe fn IsKeyDown(key: i32) -> bool;
 
   // Gestures and Touch handling functions
   pub unsafe fn IsGestureDetected(gesture: u32) -> bool;

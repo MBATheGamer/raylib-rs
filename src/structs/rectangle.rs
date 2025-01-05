@@ -1,4 +1,5 @@
 #[repr(C)]
+#[derive(Clone, Copy, Default)]
 pub struct Rectangle {
   pub x: f32,
   pub y: f32,

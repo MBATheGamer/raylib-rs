@@ -2,6 +2,7 @@ mod draw;
 mod ffi;
 mod gestures;
 mod input;
+mod random;
 mod time;
 mod window;
 
